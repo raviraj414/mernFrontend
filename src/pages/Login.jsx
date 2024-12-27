@@ -26,8 +26,8 @@ export default function Login() {
   const handleSubmit=async(e)=>{
         e.preventDefault()
         try {
-          const request= await post('/auth/login',value)
-          // const request= await axios.post('http://localhost:5000/auth/login',value)
+          //const request= await post('/auth/login',value)
+          const request= await axios.post('https://mernbackend-6rie.onrender.com/auth/login',value)
          
           const response= request.data
           if (response.success) {
