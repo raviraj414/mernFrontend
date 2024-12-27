@@ -20,7 +20,7 @@ export default function Register() {
     e.preventDefault()
 
     try {
-      const request=await post('/auth/register',value)
+      const request=await post('https://mernbackend-6rie.onrender.com/auth/register',value)
       const response= request.data
       console.log(response)
       if (response.success) {
